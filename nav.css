@@ -1,0 +1,224 @@
+@import url('https://fonts.googleapis.com/css2?family=Unica+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    /* font-family: "Unica One", sans-serif; */
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    outline: none;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+}
+
+
+
+
+
+.container-web {
+    width: 100%;
+    height: 100vh;
+    /* background-color: red; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.container-web .nav {
+    width: 20%;
+    height: 100%;
+    /* background-color: rgba(0, 0, 0, 0.03); */
+    border-right: 1px solid rgba(0, 0, 0, 0.08);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+
+.container-web .nav .nav-top {
+    width: 100%;
+}
+
+
+.container-web .nav .nav-top .logo {
+    font-family: "Unica One", sans-serif;
+    font-size: 24px;
+    width: 100%;
+    padding: 24px 24px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 8px;
+    /* background-color: red; */
+}
+
+.container-web .nav .nav-top .nav-lnks-cont {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    /* background-color: antiquewhite; */
+    padding: 24px 8px;
+    list-style-type: none;
+    gap: 20px;
+}
+
+.container-web .nav .nav-top .nav-lnks-cont .lnk {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 80%;
+    gap: 20px;
+    cursor: pointer;
+}
+
+.container-web .nav .nav-top .nav-lnks-cont .lnk .lnk-logo {
+    display: flex;
+    align-items: center;
+}
+
+.container-web .nav .nav-top .nav-lnks-cont .lnk .lnk-txt {
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+}
+
+
+
+
+
+
+
+.container-web .nav .nav-bottom {
+    width: 100%;
+    border-top: 1px solid rgba(0, 0, 0, 0.08);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* flex-direction: column; */
+    padding: 24px 0px;
+    gap: 16px;
+}
+
+
+.container-web .nav .nav-bottom .profile-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20%;
+
+}
+
+.container-web .nav .nav-bottom .profile-logo img {
+    border-radius: 50%;
+}
+
+.container-web .nav .nav-bottom .logout {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 8px 16px;
+    cursor: pointer;
+    background-color: white;
+    border: 1px solid rgba(255, 0, 0, 0.5);
+    color: rgba(255, 0, 0, 0.5);
+    border-radius: 8px;
+    font-size: 12px;
+}
+
+.container-web .nav .nav-bottom .logout span {
+    font-size: 16px;
+}
+
+.container-web .nav .nav-bottom .logout:hover {
+    background-color: rgba(255, 0, 0, 0.5);
+    color: white;
+}
+
+
+
+
+
+.container-web .main {
+    width: 80%;
+    height: 100%;
+    background-color: rgba(233, 233, 233, 0.317);
+}
+
+
+.container-app {
+    width: 100%;
+    height: 100vh;
+    color: white;
+    /* background-color: red; */
+    display: none;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.container-app .nav-app {
+    width: 100%;
+    height: 10%;
+    /* background-color: rgb(213, 112, 112); */
+    display: flex;
+    align-items: center;
+}
+
+.container-app .nav-app .lnks-cont {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    list-style-type: none;
+    /* font-size: 160px; */
+    color: black;
+}
+
+.container-app .nav-app .lnks-cont .lnk {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container-app .nav-app .lnks-cont .lnk span {
+    font-size: 32px;
+}
+
+
+
+.container-app .main-app {
+    width: 100%;
+    height: 90%;
+    background-color: rgba(233, 233, 233, 0.317);
+}
+
+
+@media screen and (min-width:0px) and (max-width:940px) {
+    .container-web {
+        display: none;
+    }
+
+    .container-app {
+        display: flex;
+    }
+}
+
+
+
+@media screen and (min-width:768px) and (max-width:940px) {
+    .container-app .nav-app .lnks-cont .lnk span {
+        font-size: 40px;
+    }
+}
